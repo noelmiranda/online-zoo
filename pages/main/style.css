@@ -586,13 +586,90 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.pay-card p{
- margin-top: 30px;
- font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
+.pay-card p {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: #333b41;
+}
+
+/* testimonials */
+.testimonial {
+  width: 1600px;
+  height: 919px;
+}
 
 
-color: #333B41;
+.container-testimonials {
+  width: 1160px;
+  height: 575px;
+  margin-top: 100px;
+  text-align: center;
+  color:#333B41;
+}
+.testimonials-card {
+  width: 1160px;
+  height: 400px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.card-testimonial {
+  width: 268px;
+  height: 391px;
+  top: 94px;
+  border: solid 2px #f3a9f8;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 40px 309px;
+  row-gap: 50px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.card-header-user {
+  padding: 0 15px;
+}
+
+.cardtestimonial-text {
+  height: 309px;
+  width: 237px;
+  font-size: 16px;
+  margin-top: -35px;
+  overflow: hidden;
+  color: #767474;
+}
+.testimonials-feedback{
+  margin-top: 50px;
+  text-align: center;
+
+}
+.btn-testimonial {
+  width: 298px;
+  height: 54px;
+  margin-left: 180px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: 0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-testimonial:hover {
+  color: #000;
 }
