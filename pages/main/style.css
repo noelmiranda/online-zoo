@@ -602,13 +602,12 @@ h1 {
   height: 919px;
 }
 
-
 .container-testimonials {
   width: 1160px;
   height: 575px;
   margin-top: 100px;
   text-align: center;
-  color:#333B41;
+  color: #333b41;
 }
 .testimonials-card {
   width: 1160px;
@@ -646,10 +645,9 @@ h1 {
   overflow: hidden;
   color: #767474;
 }
-.testimonials-feedback{
+.testimonials-feedback {
   margin-top: 50px;
   text-align: center;
-
 }
 .btn-testimonial {
   width: 298px;
@@ -672,4 +670,192 @@ h1 {
 
 .btn-testimonial:hover {
   color: #000;
+}
+
+/* footer */
+
+.footer {
+  width: 1600px;
+  height: 443px;
+  background: #111115;
+  padding-top: 40px;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
+  height: 363px;
+  /* color: red;
+  border: solid 1px red; */
+}
+
+.social-media-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: solid 1px blue; */
+}
+
+.logo-footer {
+  margin-top: 0px;
+  margin-left: 0px;
+  border: 1px solid #fff;
+  padding: 4px 5px;
+}
+.logo-footer h2 {
+  font-size: 19px;
+}
+.logo-footer a {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-footer {
+  width: 298px;
+  height: 54px;
+  /* margin-left: 180px; */
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: 0;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-footer:hover {
+  color: #000;
+}
+.social-media {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  display: block;
+  margin-left: 0px;
+}
+
+.social-media li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5px 0;
+  margin-left: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.circle-social-media-footer {
+  background: lightblue;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: rgba(196, 196, 196, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interactive-navigation-bar {
+  display: flex;
+  align-items: flex-end;
+}
+
+.interactive-navigation-bar ul {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-bottom: 0;
+}
+
+.interactive-navigation-bar li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.interactive-navigation-bar li a:hover {
+  color: #ffa500;
+}
+
+.subscribe-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffff;
+}
+
+.subscribe h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+input {
+  width: 228px;
+  height: 42px;
+  border-color: #f9804b;
+  background-color: transparent;
+}
+
+::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #bdbdbd;
+  padding: 0 5px;
+}
+
+.btn-submit-footer {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4b9200;
+  background: #f1f3f2;
+  width: 129px;
+  height: 42px;
+  right: 220px;
+  border: 1px solid #4b9200;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.disigned {
+  display: flex;
+  flex-direction: column;
+ margin-right: 0px;
+}
+
+.disigned h6 {
+  margin-left: 0px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+
+color: #FFFFFF;
+
 }
