@@ -66,6 +66,19 @@ h1 {
   font-size: 16px;
   color: #fff;
   font-weight: 100;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.header-design a:hover {
+  color: #ffa500;
+}
+.nav-menu-default {
+  color: #ffa500;
 }
 .nav-menu li a {
   font-size: 16px;
@@ -134,6 +147,9 @@ h1 {
 .backstage-block {
   height: 723px;
   width: 1600px;
+  background-image: url(../../assets/images/flower_foto1.png);
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 50%;
 }
 
 .container-backstage-block {
@@ -148,83 +164,54 @@ h1 {
   padding-right: 50px;
 }
 .container-backstage-block-image {
-  position: absolute;
   width: 609px;
   height: 403px;
   left: 0px;
   top: 0px;
-
   background: url(../../assets/images/bamboo-cap.png);
   backdrop-filter: blur(2px);
 }
+.article-backstage-block {
+  height: 100px;
+  width: 80%;
+}
 .article-backstage-block h2 {
-  position: absolute;
-  height: 116px;
-  left: 696px;
-  right: 0px;
-  top: 0px;
-
-  /* h2 */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  /* or 58px */
-
   color: #333b41;
 }
 .article-backstage-block-p1 {
-  position: absolute;
-  /* height: 42px; */
   left: 696px;
   right: 0px;
-  top: 136px;
-
+  margin-top: 36px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  /* or 21px */
-
   color: #333b41;
 }
 .article-backstage-block h3 {
-  position: absolute;
-  width: 217px;
-  /* height: 29px; */
-  left: calc(50% - 217px / 2 + 224px);
-  top: 232px;
-
-  /* subtitle */
-
+  margin-top: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  /* identical to box height, or 29px */
-
   color: #333b41;
 }
 .article-backstage-block-p2 {
-  position: absolute;
-  /* height: 105px; */
   left: 696px;
   right: 0px;
-  top: 295px;
-
-  /* body */
-
+  margin-top: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
-
   color: #333b41;
 }
 
@@ -244,6 +231,8 @@ h1 {
 .animal-card {
   width: 1600px;
   height: 1106px;
+  background: no-repeat url(../../assets/images/palm_foto.png) left 0% bottom 0%,
+    no-repeat url(../../assets/images/strelitzia\ 1.png) right 0% bottom 0%;
 }
 .carrousel-card {
   display: flex;
@@ -260,12 +249,9 @@ h1 {
   height: 872px;
 }
 .card {
-  /* position: absolute; */
   width: 366px;
   height: 426px;
-  /* left: 0px;
-    top: 0px; */
-  border: 1px solid #fa6f32;
+  border: 1px solid #ffa500;
 
   border-radius: 5px;
 }
@@ -276,8 +262,6 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
-
   text-transform: uppercase;
 
   color: #000000;
@@ -288,8 +272,6 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
-  /* identical to box height, or 18px */
-
   color: #000000;
 }
 .animal-img {
@@ -303,26 +285,32 @@ h1 {
 .card-1 {
   background-image: url(../../assets/images/Rectangle\ 5.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .card-2 {
   background-image: url(../../assets/images/Rectangle\ 51.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .card-3 {
   background-image: url(../../assets/images/Rectangle\ 52.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .card-4 {
   background-image: url(../../assets/images/Rectangle\ 53.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .card-5 {
   background-image: url(../../assets/images/Rectangle\ 55.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .card-6 {
   background-image: url(../../assets/images/Rectangle\ 54.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .animal-description {
   margin-top: 375px;
@@ -391,9 +379,6 @@ h1 {
 }
 
 .animal-card-footer-img1 {
-  /* position: absolute; */
-
-  /* position: absolute; */
   width: 880px;
   height: 460px;
   left: -488px;
@@ -443,8 +428,6 @@ h1 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* text-align: center; */
 }
 
 .pick-feed-friend-information h2 {
@@ -459,23 +442,12 @@ h1 {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  /* identical to box height, or 58px */
-
   text-align: center;
-
-  color: #fe9013;
+  color: #ffa500;
 }
 
 .pick-feed-friend-information-p1 {
-  /* position: absolute; */
-  /* width: 844px;
-  height: 29px; */
-  /* left: calc(50% - 844px / 2 - 59px); */
   margin-top: 129px;
-  /* color: red; */
-
-  /* subtitle */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -488,7 +460,6 @@ h1 {
   position: absolute;
   width: 1061px;
   height: 21px;
-  /* left: calc(50% - 1061px / 2 + 49.5px); */
   top: 198px;
 
   font-family: "Roboto";
@@ -502,7 +473,6 @@ h1 {
   position: absolute;
   width: 863px;
   height: 42px;
-  /* left: calc(50% - 863px / 2 - 49.5px); */
   top: 229px;
 
   font-family: "Roboto";
@@ -515,7 +485,6 @@ h1 {
 
 .how-works {
   width: 457px;
-  /* top: 400px; */
   margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
@@ -523,6 +492,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 .how-works h2 {
   width: 209px;
@@ -580,7 +550,7 @@ h1 {
   background: #ffffff;
   width: 168px;
   height: 168px;
-  border: solid 1px #f9804b;
+  border: solid 1px #ffa500;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -600,6 +570,8 @@ h1 {
 .testimonial {
   width: 1600px;
   height: 919px;
+  background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
+
 }
 
 .container-testimonials {
@@ -679,6 +651,11 @@ h1 {
   height: 443px;
   background: #111115;
   padding-top: 40px;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
 }
 
 .container-footer {
@@ -756,6 +733,16 @@ h1 {
   cursor: pointer;
 }
 
+
+.social-media li a {
+  text-decoration: none;
+  /* color: #fff; */
+  font-size: 16px;
+}
+.social-media li a:hover {
+  color: #ffa500;
+}
+
 .circle-social-media-footer {
   background: lightblue;
   border-radius: 50%;
@@ -766,6 +753,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 .interactive-navigation-bar {
   display: flex;
   align-items: flex-end;
@@ -783,12 +771,17 @@ h1 {
   margin-bottom: 0;
 }
 
-.interactive-navigation-bar li a {
+.interactive-navigation-bar a {
   text-decoration: none;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
-.interactive-navigation-bar li a:hover {
+.footer-menu-default {
+  color: #ffa500;
+}
+
+
+.interactive-navigation-bar a:hover {
   color: #ffa500;
 }
 
@@ -811,7 +804,7 @@ h1 {
 input {
   width: 228px;
   height: 42px;
-  border-color: #f9804b;
+  border-color: #ffa500;
   background-color: transparent;
 }
 
@@ -831,7 +824,7 @@ input {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #4b9200;
+  color: #000;
   background: #f1f3f2;
   width: 129px;
   height: 42px;
@@ -840,22 +833,22 @@ input {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.btn-submit-footer:hover {
+  color: #ffa500;
+}
 .disigned {
   display: flex;
   flex-direction: column;
- margin-right: 0px;
+  margin-right: 0px;
 }
 
 .disigned h6 {
   margin-left: 0px;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 100;
-font-size: 16px;
-line-height: 130%;
-/* identical to box height, or 21px */
-
-
-color: #FFFFFF;
-
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
 }
