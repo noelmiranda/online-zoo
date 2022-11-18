@@ -256,6 +256,11 @@ h1 {
   border-radius: 5px;
 }
 
+.card:hover {
+ background-color: #f9804b;
+ opacity: .7;
+}
+
 .animal-description h4 {
   font-family: "Roboto";
   font-style: normal;
