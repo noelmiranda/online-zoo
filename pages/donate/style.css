@@ -503,6 +503,10 @@ input {
   background-color: transparent;
 }
 
+input:focus {
+  background-color: #929699;
+}
+
 ::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -560,4 +564,15 @@ input {
   border: 1px solid #929699;
 border-radius: 2px;
   background-color: transparent;
+
+}
+
+.another-amout-input:focus {
+  background-color: #929699;
+}
+
+.another-amout-input::-webkit-outer-spin-button,
+.another-amout-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
