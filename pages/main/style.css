@@ -86,12 +86,35 @@ h1 {
   color: #ffa500;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    width: 1000px;
+  }
+
+  .container {
+    width: 1000px;
+  }
+
+  .brand-frame {
+    margin-left: 30px;
+  }
+
+  .nav-menu {
+    margin-right: 50px;
+    gap: 40px;
+  }
+  .header-design {
+    margin-right: 50px;
+  }
+}
+
 /* Section-watch-favorite-animal */
 
 .watch-favorite-animal {
   background-image: url("../../assets/images/Giant\ Panda.png");
   width: 1600px;
   height: 700px;
+  background-size: cover;
 }
 
 .container-watch-favorite-animal p {
@@ -142,6 +165,44 @@ h1 {
 .btn-watсh-online:hover {
   color: #000;
 }
+
+@media screen and (max-width: 1000px) {
+  .watch-favorite-animal {
+    background-image: url("../../assets/images/Giant\ Panda.png");
+    width: 1000px;
+    height: 504px;
+    display: flex;
+  }
+
+  .container-watch-favorite-animal p {
+    font-size: 85px;
+    line-height: 75%;
+  }
+
+  .container-watch-favorite-animal-text {
+    width: 400px;
+    height: 320px;
+    margin-top: -320px;
+    margin-left: 514px;
+  }
+  .container-watch-favorite-animal img {
+    width: 367px;
+    height: 367px;
+    margin-top: 10px;
+    margin-left: 456px;
+  }
+
+  .btn-watсh-online {
+    margin-left: -137px;
+    top: 483px;
+  }
+
+  .btn-watсh-online:hover {
+    color: #000;
+  }
+}
+
+/* BACKSTAEGE BLOCK */
 
 .backstage-block {
   height: 723px;
@@ -225,6 +286,35 @@ h1 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+@media screen and (max-width: 1000px) {
+  .backstage-block {
+    height: 723px;
+    width: 1000px;
+    background-image: none;
+  }
+
+  .container-backstage-block {
+    width: 940px;
+    height: 427px;
+    left: 30px;
+    right: 30px;
+    top: 684px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+  }
+  .container-backstage-block-image {
+    width: 455px;
+    height: 408px;
+    background: url(../../assets/images/bamboo-cap.png);
+  }
+  .article-backstage-block {
+    height: 116px;
+    width: 454px;
+    margin-left: 30px;
+  }
+}
+
 /* animal-card */
 
 .animal-card {
@@ -235,13 +325,12 @@ h1 {
 }
 .carrousel-card {
   display: flex;
-  /* justify-content: space-around; */
-  /* align-items: flex-end; */
+  flex-direction: row;
 }
 .card-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
   column-gap: 30px;
   row-gap: 10px;
   width: 1158px;
@@ -251,13 +340,12 @@ h1 {
   width: 366px;
   height: 426px;
   border: 1px solid #ffa500;
-
   border-radius: 5px;
 }
 
 .card:hover {
- background-color: #000;
- opacity: .7;
+  background-color: #000;
+  opacity: 0.7;
 }
 
 .animal-description h4 {
@@ -281,7 +369,10 @@ h1 {
 }
 
 .animal-description h4 {
-  color: #ffff;
+  color: #000;
+}
+.animal-description h4:hover {
+  color: #fff;
 }
 .animal-img {
   width: 364px;
@@ -334,9 +425,16 @@ h1 {
 .animal-description-images-banan {
   margin-right: -50px;
 }
+.btn-container{
+  display: none !important;
+}
+
+span {
+  display: none !important;
+}
+
 
 .btn-narrow-backward {
-  /* position: absolute; */
   margin-top: 25%;
   margin-right: 0;
   width: 62px;
@@ -365,11 +463,10 @@ h1 {
 }
 
 .btn-chosse-your-favorite {
-  position: absolute;
+  /* position: absolute; */
   width: 298px;
   height: 54px;
-  left: calc(50% - 298px / 2);
-  top: 2455px;
+  margin-top: 80px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border: 0;
   border-radius: 25px;
@@ -394,12 +491,160 @@ h1 {
   width: 1600px;
 }
 
-.animal-card-footer-img1 {
-  width: 880px;
-  height: 460px;
-  left: -488px;
-  top: 2149px;
-  z-index: 289;
+
+
+@media screen and (max-width: 1000px) {
+  .animal-card {
+
+    width: 1000px;
+    /* height: 801px; */
+    background: no-repeat url(../../assets/images/palm_foto.png) left 0% bottom 0%,
+      no-repeat url(../../assets/images/strelitzia\ 1.png) right 0% bottom 0%;
+      background-size: 250px 150px;
+  }
+
+  .btn-container {
+    width: 294px;
+    height: 92px;
+    grid-column-start: 2;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  span {
+    display: block !important;
+  }
+
+  .card {
+    width: 294px;
+    height: 354px;
+    border: 1px solid #ffa500;
+    border-radius: 5px;
+  }
+
+  .card:hover {
+    background-color: #000;
+    opacity: 0.7;
+  }
+
+  .animal-img {
+    width: 294px;
+    height: 354px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: blue; */
+  }
+  .animal-description {
+    margin-top: 290px;
+   width: 280px;
+   height: 60px;
+   border: none;
+   background: white;
+  }
+
+  .animal-description h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #000000;
+  /* background: red; */
+}
+
+  .card-1 {
+    background-image: url(../../assets/images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .card-2 {
+    background-image: url(../../assets/images/Rectangle\ 51.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .card-3 {
+    background-image: url(../../assets/images/Rectangle\ 52.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .card-4 {
+    background-image: url(../../assets/images/Rectangle\ 53.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .card-5 {
+    background-image: url(../../assets/images/Rectangle\ 55.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .card-6 {
+    background-image: url(../../assets/images/Rectangle\ 54.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+
+  .animal-description-images-bamboo {
+  margin-right: -30px;
+}
+ .animal-description-images-banan {
+  margin-right: -50px;
+}
+
+  .btn-narrow-backward {
+    visibility: hidden;
+  }
+  .btn-narrow-backward-1000px {
+    display:block;
+    visibility: visible;
+    margin: 0;
+    width: 62px;
+    height: 62px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    cursor: pointer;
+  }
+
+  .btn-narrow-backward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward {
+    visibility: hidden;
+  }
+  .btn-narrow-forward-1000px {
+    display:block;
+    visibility: visible;
+    margin: 0;
+    width: 62px;
+    height: 62px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    cursor: pointer;
+  }
+
+  .btn-chosse-your-favorite {
+    margin: 80px auto;
+  }
+  .animal-card-footer{
+    width: 1000px;
+  }
+  .btn-chosse-your-favorite:hover {
+    color: #000;
+  }
+
+
+
 }
 
 /* pick-and-feed */
@@ -474,8 +719,6 @@ h1 {
 
 .pick-feed-friend-information-p2 {
   position: absolute;
-  width: 1061px;
-  height: 21px;
   top: 198px;
 
   font-family: "Roboto";
@@ -487,8 +730,7 @@ h1 {
 }
 .pick-feed-friend-information-p3 {
   position: absolute;
-  width: 863px;
-  height: 42px;
+
   top: 229px;
 
   font-family: "Roboto";
@@ -582,12 +824,29 @@ h1 {
   color: #333b41;
 }
 
+@media screen and (max-width: 1000px) {
+  .pick-and-feed {
+    height: 876px;
+    width: 1000px;
+  }
+
+  .pick-feed-friend {
+    height: 796px;
+    width: 940px;
+    margin: 30px 30px 50px 30px;
+  }
+  .pick-feed-friend-information-p3 {
+    top: 250px;
+  }
+}
+
+
 /* testimonials */
 .testimonial {
   width: 1600px;
   height: 919px;
-  background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
-
+  background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom
+    0%;
 }
 
 .container-testimonials {
@@ -660,6 +919,40 @@ h1 {
   color: #000;
 }
 
+@media screen and (max-width: 1000px) {
+  .testimonial {
+    margin: 0px;
+    width: 1000px;
+    height: 852px;
+    background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
+  }
+
+  .container-testimonials {
+    width: 940px;
+    height: 468px;
+    margin-top: 100px;
+
+  }
+
+  .card-tes-4{
+    display: none !important;
+  }
+  .testimonials-card {
+    width: 940px;
+  }
+  .testimonials-feedback {
+    margin-top: 20px;
+  }
+  .btn-testimonial {
+
+    margin-left: 50px;
+    margin-top:80px;
+
+  }
+
+
+}
+
 /* footer */
 
 .footer {
@@ -722,11 +1015,11 @@ footer a {
   cursor: pointer;
   margin-left: 0px;
 }
-.btn-footer a{
+.btn-footer a {
   text-decoration: none;
 }
 
-.btn-footer:hover a{
+.btn-footer:hover a {
   color: #000;
 }
 .social-media {
@@ -755,16 +1048,14 @@ footer a {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border: 0;
   border-radius: 5px;
-  opacity: .7;
+  opacity: 0.7;
 }
-
 
 .social-media li a {
   text-decoration: none;
   font-size: 16px;
   margin-left: -10px;
 }
-
 
 .circle-social-media-footer {
   border-radius: 50%;
@@ -801,7 +1092,6 @@ footer a {
 .footer-menu-default {
   color: #ffa500;
 }
-
 
 .interactive-navigation-bar a:hover {
   color: #ffa500;
@@ -875,4 +1165,29 @@ input {
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    width: 1000px;
+    height: 443px;
+
+  }
+
+  .container-footer {
+    width: 939px;
+    height: 353px;
+    margin-left: 30px;
+  }
+
+  input {
+    margin-left: -100px;
+
+  }
+
+
+
+
+
+
 }
