@@ -171,7 +171,7 @@ h1 {
     background-image: url("../../assets/images/Giant\ Panda.png");
     width: 1000px;
     height: 504px;
-    display: flex;
+    background-size: cover;
   }
 
   .container-watch-favorite-animal p {
@@ -833,7 +833,7 @@ span {
   .pick-feed-friend {
     height: 796px;
     width: 940px;
-    margin: 30px 30px 50px 30px;
+    margin: 30px 10px 50px 10px;
   }
   .pick-feed-friend-information-p3 {
     top: 250px;

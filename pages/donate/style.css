@@ -86,6 +86,28 @@ h1 {
   color: #ffa500;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    width: 1000px;
+  }
+
+  .container {
+    width: 1000px;
+  }
+
+  .brand-frame {
+    margin-left: 30px;
+  }
+
+  .nav-menu {
+    margin-right: 50px;
+    gap: 40px;
+  }
+  .header-design {
+    margin-right: 50px;
+  }
+}
+
 /* Section-watch-favorite-animal */
 
 .watch-favorite-animal {
@@ -93,16 +115,22 @@ h1 {
   width: 1600px;
   height: 390px;
   margin: 0px auto;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .watch-favorite-animal {
+    background-image: url("../../assets/images/Giant\ Panda.png");
+    width: 1000px;
+    height: 504px;
+
+
+  }
 }
 
 /* pick-and-feed */
 
 .donation {
-  /* display: block; */
-  /* z-index: -1; */
-  /* position: relative; */
-  /* margin: 0px auto; */
-  /* margin-top: 0; */
   border: solid 1px transparent;
   height: 1482px;
   width: 1600px;
@@ -255,7 +283,7 @@ h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  width: 916px;
+  /* width: 916px; */
   color: #fff;
 }
 
@@ -271,13 +299,7 @@ h1 {
 }
 .radio-inline{
   font-size: 16px;
-
 }
-
-
-
-
-
 
 .form-control-another-amout {
   margin-top: 25px;
@@ -299,6 +321,56 @@ h1 {
 .btn-feed-friend {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 border-radius: 25px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .donation {
+    width: 1000px;
+    height: 1333px;
+  }
+
+  .container-donation{
+
+    width: 940px;
+  }
+  .pick-feed {
+    width: 940px;
+    height: 862px;
+    margin: 0 auto;
+  }
+  .pick-feed-friend {
+   width: 860px;
+  margin: 15px 40px;
+  text-align: center;
+  }
+
+  .form-control {
+    width: 860px;
+    margin: 0;
+    display: flex;
+
+  }
+  .radio-inline {
+    font-size: 12px;
+  }
+  .another-amout-radio{
+  margin-left: 25px;
+  }
+  .amout-title-radio {
+    text-transform: uppercase;
+    color: #fff;
+    width: 10px;
+    height: 20px;
+    accent-color: #ffee2e;
+    padding: 0px;
+    transition: 0.2s all linear;
+
+  }
+  .radio-inline{
+    font-size: 16px;
+
+  }
 }
 /* footer */
 
@@ -575,4 +647,24 @@ border-radius: 2px;
 .another-amout-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    width: 1000px;
+    height: 443px;
+
+  }
+
+  .container-footer {
+    width: 939px;
+    height: 353px;
+    margin-left: 30px;
+  }
+
+  .footer input{
+    margin-left: -100px;
+  }
+
+
 }
