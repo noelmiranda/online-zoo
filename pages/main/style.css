@@ -28,6 +28,7 @@ header a {
 .container {
   width: 1600px;
   margin: auto;
+  display: flex;
 }
 .navbar {
   color: red;
@@ -85,6 +86,19 @@ h1 {
 .nav-menu li a:hover {
   color: #ffa500;
 }
+.menu-li-640px {
+  display: none !important;
+}
+
+#menu,
+#menu-check {
+  display: none;
+  color: #fff;
+}
+
+.brand-frame-640px {
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -106,6 +120,109 @@ h1 {
   .header-design {
     margin-right: 50px;
   }
+}
+
+@media screen and (max-width: 640px) {
+  .brand-frame {
+    border: none;
+  }
+
+  .menu-li-640px {
+    display: block !important;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 640px;
+    height: 329px;
+    top: 0px;
+    color: #333b41;
+    background: #fff;
+  }
+
+  .nav-menu {
+    position: absolute;
+    width: 640px;
+    top: 55px;
+    left: 160px;
+    display: block;
+  }
+  .nav-menu li {
+    margin-top: 15px;
+  }
+
+  .nav-menu li a {
+    font-size: 16px;
+    color: #333B41 ;
+  }
+  .nav-menu-default {
+    color: #333B41 !important;
+  }
+
+  #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu-check:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    position: absolute;
+    display: block;
+    right: 18px;
+    top: 10px;
+  }
+
+  #menu:hover {
+    color: #fff;
+  }
+
+  #menu-open {
+    font-size: 42px;
+  }
+
+  #menu-close {
+    display: none !important;
+    display: block;
+
+
+  }
+
+  #menu-check:checked ~ label #menu-open {
+    display: none !important;
+  }
+  #menu-check:checked ~ label #menu-close {
+    display: block !important;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .brand-frame-640px {
+    position: absolute;
+    display: block !important;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #ffa500;
+  }
+
+  .brand-frame-640px h2 {
+    font-size: 19px;
+    color: #ffa500;
+  }
+  .brand-frame-640px a {
+    font-size: 19px;
+    color: #ffa500;
+    text-decoration: none;
+  }
+  .logo-branding {
+    color: #ffa500;
+  }
+
+
 }
 
 /* Section-watch-favorite-animal */
@@ -201,6 +318,44 @@ h1 {
     color: #000;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .watch-favorite-animal {
+    background-image: url("../../assets/images/Giant\ Panda.png");
+    width: 640px;
+    height: 339px;
+    background-size: cover;
+  }
+
+  .container-watch-favorite-animal p {
+    font-size: 54px;
+    line-height: 45px;
+    /* background: red; */
+  }
+
+  .container-watch-favorite-animal-text {
+    width: 255px;
+    height: 204px;
+    margin-top: -210px;
+    margin-left: 368px;
+  }
+  .container-watch-favorite-animal img {
+    width: 237px;
+    height: 237px;
+    margin-top: 44px;
+    margin-left: 330px;
+  }
+
+  .btn-watсh-online {
+   left: 150px;
+    top: 330px;
+  }
+
+  .btn-watсh-online:hover {
+    color: #000;
+  }
+}
+
 
 /* BACKSTAEGE BLOCK */
 
@@ -315,6 +470,34 @@ h1 {
   }
 }
 
+@media screen and (max-width: 640px) {
+.container-backstage-block-image{
+  display: none;
+}
+  .backstage-block {
+    width: 640px;
+    height: 447px;
+    background-image: block;
+    background-image: url(../../assets/images/flower_foto1.png);
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 50%;
+    background-size: 20%;
+  }
+  .container-backstage-block {
+    width: 495px;
+    height: 367px;
+    margin: 0;
+    left: 0px;
+    top: 453px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+  }
+  .article-backstage-block {
+    margin-left: 20px;
+  }
+}
+
 /* animal-card */
 
 .animal-card {
@@ -328,9 +511,9 @@ h1 {
   flex-direction: row;
 }
 .card-wrapper {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   column-gap: 30px;
   row-gap: 10px;
   width: 1158px;
@@ -425,14 +608,30 @@ grid-template-rows: 1fr 1fr;
 .animal-description-images-banan {
   margin-right: -50px;
 }
-.btn-container{
+.btn-container-1000px {
   display: none !important;
 }
 
-span {
+.span-640px{
   display: none !important;
 }
+.span-1000px{
+  display: none !important;
+}
+.btn-narrow-backward-1000px {
+  display: none;
 
+}.btn-narrow-forward-1000px {
+  display: none;
+
+}
+.btn-narrow-backward-640px {
+  display: none;
+
+}
+.btn-narrow-forward-640px {
+  display: none;
+}
 
 .btn-narrow-backward {
   margin-top: 25%;
@@ -491,19 +690,17 @@ span {
   width: 1600px;
 }
 
-
-
 @media screen and (max-width: 1000px) {
   .animal-card {
 
     width: 1000px;
-    /* height: 801px; */
     background: no-repeat url(../../assets/images/palm_foto.png) left 0% bottom 0%,
       no-repeat url(../../assets/images/strelitzia\ 1.png) right 0% bottom 0%;
       background-size: 250px 150px;
+      padding: 0 30px;
   }
 
-  .btn-container {
+  .btn-container-1000px {
     width: 294px;
     height: 92px;
     grid-column-start: 2;
@@ -514,29 +711,18 @@ span {
   }
 
 
-  span {
+  .span-1000px {
     display: block !important;
   }
 
   .card {
     width: 294px;
     height: 354px;
-    border: 1px solid #ffa500;
-    border-radius: 5px;
-  }
 
-  .card:hover {
-    background-color: #000;
-    opacity: 0.7;
   }
-
   .animal-img {
     width: 294px;
     height: 354px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: blue; */
   }
   .animal-description {
     margin-top: 290px;
@@ -544,61 +730,13 @@ span {
    height: 60px;
    border: none;
    background: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
-
-  .animal-description h4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 95%;
-  text-transform: uppercase;
-  color: #000000;
-  /* background: red; */
-}
-
-  .card-1 {
-    background-image: url(../../assets/images/Rectangle\ 5.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-
-  .card-2 {
-    background-image: url(../../assets/images/Rectangle\ 51.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  .card-3 {
-    background-image: url(../../assets/images/Rectangle\ 52.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  .card-4 {
-    background-image: url(../../assets/images/Rectangle\ 53.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  .card-5 {
-    background-image: url(../../assets/images/Rectangle\ 55.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  .card-6 {
-    background-image: url(../../assets/images/Rectangle\ 54.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-
-
-  .animal-description-images-bamboo {
-  margin-right: -30px;
-}
- .animal-description-images-banan {
-  margin-right: -50px;
-}
 
   .btn-narrow-backward {
-    visibility: hidden;
+    display: none;
   }
   .btn-narrow-backward-1000px {
     display:block;
@@ -619,7 +757,7 @@ span {
     background: #333b41;
   }
   .btn-narrow-forward {
-    visibility: hidden;
+    display: none;
   }
   .btn-narrow-forward-1000px {
     display:block;
@@ -642,10 +780,97 @@ span {
   .btn-chosse-your-favorite:hover {
     color: #000;
   }
-
-
-
 }
+@media screen and (max-width: 640px) {
+  .animal-card {
+
+    width: 640px;
+    height: 950px;
+    background: no-repeat url(../../assets/images/palm_foto.png) left 0% bottom 0%,
+      no-repeat url(../../assets/images/strelitzia\ 1.png) right 0% bottom 0%;
+      background-size: 250px 150px;
+      padding: 0 20px;
+  }
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 30px;
+    width: 600px;
+    height: 756px;
+  }
+
+  .btn-container-1000px {
+   display: none !important;
+  }
+
+
+  .span-1000px{
+    display: none !important;
+  }
+  .card-5, .card-6{
+    display: none;
+  }
+
+  .card {
+    width: 285px;
+    height: 332px;
+
+  }
+  .animal-img {
+    width: 285px;
+    height: 332px;
+  }
+  .animal-description {
+    margin-top: 270px;
+   width: 275px;
+   height: 60px;
+   border: none;
+   background: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .btn-narrow-backward {
+    display: none;
+  }
+  .btn-narrow-backward-1000px {
+   display: none;
+  }
+
+  .btn-narrow-backward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward {
+    display: none;
+  }
+  .btn-narrow-forward-1000px {
+   display: none;
+  }
+
+  .btn-chosse-your-favorite {
+    margin: 15px auto;
+  }
+  .animal-card-footer{
+    width: 640px;
+  }
+  .btn-chosse-your-favorite:hover {
+    color: #000;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* pick-and-feed */
 
@@ -653,8 +878,8 @@ span {
   display: block;
   /* z-index: -1; */
   position: relative;
-  height: 1004px;
   width: 1600px;
+  height: 1004px;
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -826,19 +1051,62 @@ span {
 
 @media screen and (max-width: 1000px) {
   .pick-and-feed {
-    height: 876px;
     width: 1000px;
+    height: 876px;
   }
 
   .pick-feed-friend {
-    height: 796px;
     width: 940px;
-    margin: 30px 10px 50px 10px;
+    height: 796px;
+    margin: 30px 25px;
   }
   .pick-feed-friend-information-p3 {
     top: 250px;
   }
 }
+@media screen and (max-width: 640px) {
+  .pick-and-feed {
+    width: 640px;
+    height: 781px;
+  }
+
+  .pick-feed-friend {
+    width: 640px;
+    height: 781px;
+    margin: 30px 0px;
+    padding:20px;
+  }
+  .pick-feed-friend-information h2 {
+    font-size: 42px;
+  }
+  .pick-feed-friend-information-p3 {
+    top: 250px;
+  }
+
+  .pick-feed-friend-information-p1 {
+    margin-top: 100px;
+   font-size: 22px;
+  }
+  .how-wroks-icons {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -75px;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* testimonials */
@@ -924,17 +1192,17 @@ span {
     margin: 0px;
     width: 1000px;
     height: 852px;
-    background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
+    background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom
+      0%;
   }
 
   .container-testimonials {
     width: 940px;
     height: 468px;
     margin-top: 100px;
-
   }
 
-  .card-tes-4{
+  .card-tes-4 {
     display: none !important;
   }
   .testimonials-card {
@@ -944,14 +1212,100 @@ span {
     margin-top: 20px;
   }
   .btn-testimonial {
-
     margin-left: 50px;
-    margin-top:80px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .testimonial {
+    margin: 0px;
+    width: 640px;
+    background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
+      background-size: 25%;
+      margin-bottom: 150px;
+  }
+
+  .container-testimonials {
+    width: 640px;
+    height: 468px;
+    margin-top: 80px;
+  }
+
+
+  .card-tes-4 {
+    display: none !important;
+  }
+  .testimonials-card {
+    width: 600px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card-testimonial {
+    width: 600px;
+    height: 109px;
+    top: 94px;
+    border: solid 2px #f3a9f8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+  }
+
+  .testimonials-feedback {
+    margin-top: 20px;
+  }
+  .btn-testimonial {
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .card-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 300px;
+   row-gap: 50px;
+  padding-left: 10px;
 
   }
 
 
+  .card-header-user {
+    padding: 0 0px;
+    margin-left: 0;
+
+  }
+
+  .cardtestimonial-text {
+    text-align: left;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: -45px;
+    overflow: hidden;
+    color: #767474;
+  }
+
+  .testimonials-feedback{
+    display: none;
+  }
+  .btn-testimonial {
+    width: 298px;
+    height: 54px;
+    margin-left: 180px;
+
+  }
 }
+
+
+
+
+
+
 
 /* footer */
 
@@ -961,6 +1315,7 @@ span {
   background: #111115;
   padding-top: 40px;
   color: #fff;
+
 }
 
 footer a {
@@ -1171,7 +1526,6 @@ input {
   .footer {
     width: 1000px;
     height: 443px;
-
   }
 
   .container-footer {
@@ -1182,12 +1536,84 @@ input {
 
   input {
     margin-left: -100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    width: 640px;
+    height: 282px;
+    /* padding-top: 100px; */
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  }
+  .subscribe {
+    display: none !important;
+  }
 
+  .container-footer {
+    width: 939px;
+    height: 353px;
+    margin-left: 30px;
   }
 
 
+  .interactive-navigation-bar {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0px;
+  }
 
+  .interactive-navigation-bar ul {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-bottom: 0;
+  }
 
+  .interactive-navigation-bar a {
+    text-decoration: none;
+  }
+  .social-media{
+    position: absolute;
+   margin-top: -200px;
+   right: -50px;
+  }
+  .social-media a {
+    display: none;
+  }
 
+  .logo-footer {
+    position: absolute;
+    margin-top: -300px;
+   left: 20px;
+  }
 
+  .btn-footer{
+    position: absolute;
+    margin-top: -100px;
+    left: 20px;
+  }
+
+  .interactive-navigation-bar ul {
+    position: absolute;
+    padding: 120px;
+    left: -100px;
+    font-size: 16px;
+  }
+
+  .nav-menu-default {
+    color: #ffa500 !important;
+  }
+  .disigned{
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    font-size: 16px;
+  }
 }

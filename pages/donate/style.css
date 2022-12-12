@@ -86,6 +86,8 @@ h1 {
   color: #ffa500;
 }
 
+
+
 @media screen and (max-width: 1000px) {
   header {
     width: 1000px;
@@ -107,6 +109,8 @@ h1 {
     margin-right: 50px;
   }
 }
+
+
 
 /* Section-watch-favorite-animal */
 
