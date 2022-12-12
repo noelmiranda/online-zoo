@@ -123,6 +123,13 @@ h1 {
 }
 
 @media screen and (max-width: 640px) {
+  header {
+    width: 640px;
+  }
+
+  .container {
+    width: 640px;
+  }
   .brand-frame {
     border: none;
   }
@@ -221,8 +228,46 @@ h1 {
   .logo-branding {
     color: #ffa500;
   }
+  .header-design{
+    display: none
+  }
 
 
+}
+@media screen and (max-width: 320px) {
+
+  header {
+    width: 320px;
+    height: 70px;
+  }
+
+  .container {
+    width: 320px;
+  }
+  .brand-frame h1{
+    font-weight: 100;
+
+  }
+  .brand-frame {
+    margin-left: 10px
+  }
+  .navbar {
+    width: 320px;
+
+  }
+
+  .nav-menu {
+    position: absolute;
+    width: 320px;
+    top: 55px;
+    left: 160px;
+    display: block;
+  }
+
+  #menu {
+    right: 10px;
+    top: 10px;
+  }
 }
 
 /* Section-watch-favorite-animal */
@@ -355,6 +400,44 @@ h1 {
     color: #000;
   }
 }
+@media screen and (max-width: 320px) {
+  .watch-favorite-animal {
+    background-image: url("../../assets/images/Giant\ Panda.png");
+    width: 320px;
+    height: 187px;
+    background-size: cover;
+  }
+
+  .container-watch-favorite-animal p {
+    line-height: 22px;
+    font-size: 28px ;
+    /* background: red; */
+  }
+
+  .container-watch-favorite-animal-text {
+    width: 128px;
+    height: 102px;
+    margin-top: -100px;
+    margin-left: 170px;
+  }
+  .container-watch-favorite-animal img {
+    width: 119px;
+    height: 119px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .btn-watсh-online {
+   left: 150px;
+    margin-top: -40px;
+  }
+
+  .btn-watсh-online:hover {
+    color: #000;
+  }
+}
+
+
 
 
 /* BACKSTAEGE BLOCK */
@@ -495,6 +578,39 @@ h1 {
   }
   .article-backstage-block {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+.container-backstage-block-image{
+  display: none;
+}
+  .backstage-block {
+    width: 320px;
+    height: 550px;
+    background-image: block;
+    background-image: url(../../assets/images/flower_foto1.png);
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 50%;
+    background-size: 18%;
+  }
+  .container-backstage-block {
+    width: 297px;
+    height: 367px;
+    margin: 0;
+    left: 0px;
+    top: 453px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+  }
+  .article-backstage-block {
+    width: 280px;
+    margin-top: -90px;
+    margin-left: 5px;
+
+  }
+  .article-backstage-block h2{
+    font-size: 24px;
   }
 }
 
@@ -863,6 +979,93 @@ h1 {
     color: #000;
   }
 }
+@media screen and (max-width: 320px) {
+  .animal-card {
+
+    width: 320px;
+    height: 1500px;
+    background: no-repeat url(../../assets/images/palm_foto.png) left 0% bottom 0%,
+      no-repeat url(../../assets/images/strelitzia\ 1.png) right 0% bottom 0%;
+      background-size: 100px 70px;
+      padding: 0 20px;
+  }
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    column-gap: 0px;
+    row-gap: 5px;
+    width: 320px;
+    height: 756px;
+  }
+
+  .btn-container-1000px {
+   display: none !important;
+  }
+
+
+  .span-1000px{
+    display: none !important;
+  }
+  .card-5, .card-6{
+    display: none;
+  }
+
+  .card {
+    width: 285px;
+    height: 332px;
+
+  }
+  .animal-img {
+    width: 285px;
+    height: 332px;
+  }
+  .animal-description {
+    margin-top: 270px;
+   width: 275px;
+   height: 60px;
+   border: none;
+   background: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .btn-narrow-backward {
+    display: none;
+  }
+  .btn-narrow-backward-1000px {
+   display: none;
+  }
+
+  .btn-narrow-backward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward-1000px:hover {
+    background: #333b41;
+  }
+  .btn-narrow-forward {
+    display: none;
+  }
+  .btn-narrow-forward-1000px {
+   display: none;
+  }
+
+  .btn-chosse-your-favorite {
+    margin-top: 600px;
+   margin-left: -10px;
+
+  }
+  .animal-card-footer{
+    width: 320px;
+
+
+
+  }
+  .btn-chosse-your-favorite:hover {
+    color: #000;
+  }
+}
 
 
 
@@ -1098,6 +1301,49 @@ h1 {
 
 }
 
+@media screen and (max-width: 320px) {
+  .pick-and-feed {
+    width: 320px;
+    height: 1400px;
+    text-align: center;
+  }
+
+  .pick-feed-friend {
+    width: 320px;
+    height: 1200px;
+    margin: 0px 0px;
+    padding:0px;
+  }
+  .pick-feed-friend-information h2 {
+    font-size: 24px;
+  }
+  .pick-feed-friend-information-p3 {
+    font-size: 18px;
+    top: 350px;
+  }
+
+  .pick-feed-friend-information-p1 {
+    margin-top: 100px;
+   font-size: 18px;
+  }
+
+  .how-works{
+    font-size: 24px;
+    margin-left: -55px;
+    text-align: center;
+  }
+  .how-wroks-icons {
+    width: 320px;
+    display: flex;
+    margin-top: 160px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+margin-left: 50px;
+
+  }
+}
+
 
 
 
@@ -1297,6 +1543,93 @@ h1 {
     width: 298px;
     height: 54px;
     margin-left: 180px;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .testimonial {
+    margin: 0px;
+    width: 320px;
+    height: 800px;
+    background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom 0%;
+      background-size: 25%;
+      margin-bottom: 150px;
+  }
+
+  .container-testimonials {
+    width: 320px;
+    height: 468px;
+    margin-top: 80px;
+  }
+
+
+  .card-tes-4 {
+    display: none !important;
+  }
+  .testimonials-card {
+    width: 320px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card-testimonial {
+    width: 300px;
+    height: 109px;
+    top: 54px;
+    border: solid 2px #f3a9f8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    /* align-items: flex-start; */
+    margin-bottom: 15px;
+
+  }
+
+  .testimonials-feedback {
+    margin-top: 20px;
+  }
+  .btn-testimonial {
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .card-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 300px;
+   row-gap: 50px;
+  padding-left: 10px;
+
+  }
+
+
+  .card-header-user {
+    padding: 0 0px;
+    margin-left: 0;
+
+  }
+
+  .cardtestimonial-text {
+    text-align: left;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: -45px;
+    overflow: hidden;
+    color: #767474;
+  }
+
+  .testimonials-feedback{
+    display: none;
+  }
+  .btn-testimonial {
+    width: 298px;
+    height: 54px;
+    margin-top: -50px;
+    margin-left: 10px;
 
   }
 }
@@ -1615,5 +1948,91 @@ input {
     right: 0;
     margin-top: 200px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 320px;
+    height: 354px;
+    /* padding-top: 100px; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  bottom: 0;
+  left: 0;
+  }
+  .subscribe {
+    display: none !important;
+  }
+
+  .container-footer {
+    width: 320px;
+    height: 353px;
+    margin-left: 30px;
+    /* display: flex; */
+  }
+
+
+  .interactive-navigation-bar {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0px;
+  }
+
+  .interactive-navigation-bar ul {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-bottom: 0;
+  }
+
+  .interactive-navigation-bar a {
+    text-decoration: none;
+  }
+  .social-media ul{
+    /* position: absolute; */
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 0 50px;
+   margin-top: 10px;
+   /* right: -50px; */
+  }
+  .social-media a {
+    display: none;
+  }
+
+  .logo-footer {
+    position: absolute;
+    margin-top: -300px;
+   left: 20px;
+  }
+
+  .btn-footer{
+    position: absolute;
+    margin-top: -70px;
+    left: 20px;
+  }
+
+  .interactive-navigation-bar ul {
+    position: absolute;
+   top: 190px;
+    /* padding: 120px; */
+    left: -100px;
+    font-size: 16px;
+  }
+
+  .nav-menu-default {
+    color: #ffa500 !important;
+  }
+  .disigned{
+    position: absolute;
+    right: 0;
+    margin-top: 180px;
+    font-size: 12px;
   }
 }
