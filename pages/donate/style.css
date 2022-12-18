@@ -564,23 +564,70 @@ h1 {
 .form-control-another-amout {
   margin-top: 25px;
 }
-
+.another-amout-input{
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 400;
+  background-image: url("../../assets/images/simbolo-de-dolar.png");
+  background-repeat: no-repeat;
+  background-position: right 10px bottom 15px;
+  background-size: 9%;
+}
 .another-amout-radio {
   width: 10px;
   height: 20px;
+  font-size: 24px;
   accent-color: #fe9013;
   padding: 10px;
+  font-weight: 400;
   transition: 0.2s all linear;
 }
 .radio-label-monthly-once{
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #333B41;
+}
+.another-amout-radio{
+  width: 20px;
 }
 
 .btn-feed-friend {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 border-radius: 25px;
+}
+.btn-feed-friend {
+  margin-top: 31px;
+  width: 298px;
+  height: 54px;
+  /* margin-left: 180px; */
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: 0;
+  border-radius: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+
+.btn-feed-friend:hover{
+  color: #000;
+}
+
+.monthly-once-p {
+  margin-top: 30px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #333B41;
 }
 
 
@@ -630,6 +677,9 @@ border-radius: 25px;
   .radio-inline{
     font-size: 16px;
 
+  }
+  .otpradio-5000 {
+    display: none;
   }
 }
 @media screen and (max-width: 640px) {
@@ -695,57 +745,20 @@ border-radius: 25px;
     font-size: 16px;
 
   }
+  .otpradio-5000, .otpradio-2000, .otpradio-1000 {
+    display: none;
+  }
 }
 
 
 
-
-
-
-
 /* footer */
-
 .footer {
   width: 1600px;
   height: 443px;
   background: #111115;
   padding-top: 40px;
   color: #fff;
-}
-
-.btn-feed-friend {
-  margin-top: 31px;
-  width: 298px;
-  height: 54px;
-  /* margin-left: 180px; */
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  border: 0;
-  border-radius: 25px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  margin-left: 0px;
-}
-
-
-.btn-feed-friend:hover{
-  color: #000;
-}
-
-.monthly-once-p {
-  margin-top: 30px;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #333B41;
 }
 
 footer a {

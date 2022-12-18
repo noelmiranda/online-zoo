@@ -989,8 +989,6 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
-
   color: #333b41;
 }
 
@@ -1097,35 +1095,58 @@ h1 {
   text-align: center;
   color: #333b41;
 }
-.testimonials-card {
-  width: 1160px;
-  height: 400px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
+.container-testimonials h2{
+     margin-bottom: 100px;
 }
-.card-testimonial {
+
+
+.carousel {
+  width: 80%;
+  /* margin: 50px auto; */
+  overflow: hidden;
+  text-align: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  scroll-snap-align: start;
+  /* background: red; */
+  margin-bottom: 50px;
+}
+
+.slides-item {
+  position: relative;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform .5s;
   width: 268px;
   height: 391px;
-  top: 94px;
-  border: solid 2px #f3a9f8;
-  border-radius: 20px;
   display: grid;
   grid-template-rows: 40px 309px;
   row-gap: 50px;
-}
+  border: solid 2px #f3a9f8;
+  border-radius: 20px;
+  background: #F1F3F2;
+  margin-left: 20px;
+ }
 
 .card-header {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  font-size: 16px;
 }
-
 .card-header-user {
   padding: 0 15px;
 }
 
 .cardtestimonial-text {
+  text-align: left;
   height: 309px;
   width: 237px;
   font-size: 16px;
@@ -1133,14 +1154,42 @@ h1 {
   overflow: hidden;
   color: #767474;
 }
-.testimonials-feedback {
-  margin-top: 50px;
-  text-align: center;
+
+.carousel__nav {
+  padding: 1.25rem .5rem;
+}
+
+.slider-nav {
+  margin-top: 20px;
+  width: 9rem;
+  height: 8px;
+  align-items: center;
+  background: #F1F3F2;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0rem;
+  margin-right: -4px;
+  position: relative;
+  text-decoration: none;
+  border-bottom: solid .5px #ffa500;
+  border-top: solid .5px #f3a9f8;;
+}
+.carousel__nav-1{
+  border-radius: 25px 0px 0px 25px;
+}
+.carousel__nav-4{
+  border-radius: 0px 25px 25px 0px;
+}
+.slider-nav:hover,
+.slider-nav:active {
+  background: #ffa500;
+  color: #fff;
 }
 .btn-testimonial {
   width: 298px;
   height: 54px;
-  margin-left: 180px;
+  margin-top: 100px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border: 0;
   border-radius: 5px;
@@ -1162,32 +1211,20 @@ h1 {
 
 @media screen and (max-width: 1000px) {
   .testimonial {
-    margin: 0px;
+ margin: 0px auto;
     width: 1000px;
-    height: 852px;
+    height: 850px;
     background: no-repeat url(../../assets/images/leav_foto.png) right 0% bottom
       0%;
   }
-
   .container-testimonials {
-    width: 940px;
-    height: 468px;
-    margin-top: 100px;
+    width: 1000px;
+    height: auto;
+   display: flex;
+  flex-direction: column;
   }
 
-  .card-tes-4 {
-    display: none !important;
-  }
-  .testimonials-card {
-    width: 940px;
-  }
-  .testimonials-feedback {
-    margin-top: 20px;
-  }
-  .btn-testimonial {
-    margin-left: 50px;
-    margin-top: 80px;
-  }
+
 }
 @media screen and (max-width: 640px) {
   .testimonial {
@@ -1201,16 +1238,16 @@ h1 {
 
   .container-testimonials {
     width: 640px;
-    height: 468px;
+    /* height: 468px; */
     margin-top: 80px;
   }
 
-  .card-tes-4 {
+  /* .card-tes-4 {
     display: none !important;
-  }
+  } */
   .testimonials-card {
     width: 600px;
-    height: 109px;
+    /* height: 109px; */
     display: flex;
     flex-direction: column;
   }
@@ -1228,27 +1265,27 @@ h1 {
     margin-bottom: 15px;
   }
 
-  .testimonials-feedback {
+  /* .testimonials-feedback {
     margin-top: 20px;
-  }
+  } */
   .btn-testimonial {
     margin-left: 50px;
     margin-top: 80px;
   }
-  .card-header {
+  /* .card-header {
     width: 100%;
     display: grid;
     grid-template-columns: 50px 300px;
     row-gap: 50px;
     padding-left: 10px;
-  }
+  } */
 
-  .card-header-user {
+  /* .card-header-user {
     padding: 0 0px;
     margin-left: 0;
-  }
+  } */
 
-  .cardtestimonial-text {
+  /* .cardtestimonial-text {
     text-align: left;
     padding: 0 10px;
     width: 100%;
@@ -1256,7 +1293,7 @@ h1 {
     margin-top: -45px;
     overflow: hidden;
     color: #767474;
-  }
+  } */
 
   .testimonials-feedback {
     display: none;
